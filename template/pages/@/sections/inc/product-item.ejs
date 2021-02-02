@@ -92,4 +92,13 @@ if (imgObj) {
   <%- await include('@/helpers/widgets-append', {
     _, opt, field: 'productItemAppend'
   }) %>
+  
+  <a
+  href="/<%= itemData.slug %>"
+  class="btn btn-secondary btn-block"
+  id="link-direct"
+  title="<%= itemData.name %>"
+>
+  Detalhes
+</a>
 </article>
