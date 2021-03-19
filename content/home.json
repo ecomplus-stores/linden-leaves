@@ -7,6 +7,14 @@
       "autoplay": 9000,
       "slides": [
         {
+          "start": "2021-03-19T23:15:59.833Z",
+          "end": "2021-03-19T23:15:59.869Z",
+          "img": "/img/uploads/banner_oportunidade-1-min.png",
+          "link": "/Promocao",
+          "mobile_img": "/img/uploads/banner_oportunidade-1-min.jpg",
+          "alt": "Promoção"
+        },
+        {
           "img": "/img/uploads/banner_maos-min.png",
           "alt": "",
           "start": "",
@@ -29,13 +37,6 @@
           "alt": "Banner sample",
           "mobile_img": "/img/uploads/ll-banner2novotamanho.jpg",
           "link": "/banner-linha-facial"
-        },
-        {
-          "start": "2021-03-19T23:15:59.833Z",
-          "end": "2021-03-19T23:15:59.869Z",
-          "img": "/img/uploads/banner_oportunidade-1-min.png",
-          "link": "/Promocao",
-          "mobile_img": "/img/uploads/banner_oportunidade-1-min.jpg"
         }
       ]
     },
