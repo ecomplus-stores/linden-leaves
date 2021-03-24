@@ -7,33 +7,28 @@
       "autoplay": 9000,
       "slides": [
         {
-          "img": "/img/uploads/banner-2020b.jpg",
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner_oportunidade-1-.png",
+          "alt": "Banner sample",
+          "mobile_img": "/img/uploads/oportunidademobile.jpg",
+          "link": "/Promocao"
+        },
+        {
+          "img": "/img/uploads/banner_maos-min.png",
+          "alt": "",
+          "start": "",
+          "end": "",
+          "mobile_img": "/img/uploads/cremesmobile.jpg",
+          "link": "/banner-cremes-para-as-maos"
+        },
+        {
+          "img": "/img/uploads/banner_kits.jpg",
           "link": "/kits",
           "alt": "Headset banner",
           "start": "2020-04-11T05:54:06.750Z",
           "end": "",
-          "mobile_img": "/img/uploads/banner-2020mobileb.jpeg"
-        },
-        {
-          "img": "/img/uploads/cremes-tamanho-viagem-25ml-linden-leaves.jpg",
-          "alt": "Banner sample two",
-          "start": "",
-          "end": "",
-          "mobile_img": "/img/uploads/ll-banner3novotamanho.jpg",
-          "link": "/banner-cremes-para-as-maos"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-linden-leaves-linha-facial-livre-de-crueldade-animal-certificado-natrue.jpg",
-          "alt": "Banner sample",
-          "mobile_img": "/img/uploads/ll-banner2novotamanho.jpg",
-          "link": "/banner-linha-facial"
-        },
-        {
-          "start": "2020-07-14T15:32:05.742Z",
-          "end": "2020-07-14T15:32:05.800Z",
-          "img": "/img/uploads/banner-frete-desconto.jpg"
+          "mobile_img": "/img/uploads/kitsmobile.jpg"
         }
       ]
     },
