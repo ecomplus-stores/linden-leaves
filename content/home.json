@@ -11,23 +11,15 @@
           "end": "",
           "img": "/img/uploads/banner_oportunidade-1-.png",
           "alt": "Banner sample",
-          "mobile_img": "",
+          "mobile_img": "/img/uploads/oportunidademobile.jpg",
           "link": "/Promocao"
-        },
-        {
-          "start": "2021-03-19T23:15:59.833Z",
-          "end": "2021-03-19T23:15:59.869Z",
-          "img": "/img/uploads/banner_oportunidade-1-min.png",
-          "link": "/Promocao",
-          "mobile_img": "/img/uploads/banner_oportunidade-1-min.jpg",
-          "alt": "Promoção"
         },
         {
           "img": "/img/uploads/banner_maos-min.png",
           "alt": "",
           "start": "",
           "end": "",
-          "mobile_img": "/img/uploads/ll-banner3novotamanho.jpg",
+          "mobile_img": "/img/uploads/cremesmobile.jpg",
           "link": "/banner-cremes-para-as-maos"
         },
         {
