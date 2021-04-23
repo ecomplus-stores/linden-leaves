@@ -319,12 +319,6 @@ display: none !important;
     font-size: 1.5rem !important;
   }
 }
-@media(max-width: 767px) {
-  #link-direct {
-    
-  }
-
-}
 .product-card--inactive + #link-direct {
   display: none !important
 }
