@@ -9,21 +9,25 @@
   }
   #menu-novo {
     display: flex !important;
-    align-items: center;
+    justify-content: flex-end;
   }
   .header__buttons .btn .badge {
       top: 22px;
       right: 15px;
   }
-  #coluna-logo {
-    display: flex;
-    justify-content: center;
-    & img {
-      max-height: 100px
-    }
-  }
   .header__toggler {
     display: none
+  }
+  .top-bar__nav {
+    width: 100%;
+    padding-right: var(--space-2);
+    padding-left: var(--space-2);
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  #link-final {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -36,23 +40,23 @@
   .page--home #banner-primario {
     padding-right: 5px;
   }
+  #link-final {
+    display: flex;
+    justify-content: flex-end;
+  }
   .header__buttons .btn .badge {
       top: 22px;
       right: 15px;
+  }
+  .top-bar__nav {
+    width: 100%
   }
   .page--home #banner-secundario {
     padding-left: 5px;
   }
   #menu-novo {
     display: flex !important;
-    align-items: center;
-  }
-  #coluna-logo {
-    display: flex;
-    justify-content: center;
-    & img {
-      max-height: 100px
-    }
+    justify-content: flex-end;
   }
 }
 // apenas tablet
@@ -66,7 +70,7 @@
       width: 100%
     }
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     top: 2rem;
   }
   .menu__list {
@@ -76,11 +80,6 @@
       top: 20px;
       right: 15px;
   }
-  #coluna-logo a {
-    display: flex;
-    justify-content: center;
-    margin-left: 1.5rem;
-  }
   #user-button {
     & .fa-user {
       display: none;
@@ -89,6 +88,9 @@
       content: "Minha Conta"
     }
   }
+}
+.page-title__head h1 {
+  text-align: center;
 }
 // apenas mobile
 @media screen and (max-width: 480px) {
@@ -100,6 +102,12 @@
     align-items: center;
     top: 2rem;
   }
+  .header__logo {
+  max-width: 250px;
+  }
+  #footer__logo {
+    display: none;
+  }
   .menu__list {
     padding-top: 0;
   }
@@ -110,11 +118,6 @@
   #coluna-logo a {
     display: flex;
     justify-content: center;
-    margin-left: 1.5rem;
-  }
-  .header__logo {
-    max-height: 60px;
-    max-width: 260px !important;
   }
   .footer .row {
   display: flex;
@@ -145,17 +148,33 @@
 }
 .header {
   background: #fff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgb(12, 35, 64) !important;
   box-shadow: none;
-
-}
-.header__logo {
-max-width: 250px;
+  padding-top: 0;
+  padding-bottom: 0
 }
 .top-bar {
   background: #0c2340;
   color: #fff;
   font-weight: 400;
+  &__page-links {
+    text-transform: uppercase;
+  }
+  #cart-count {
+    color: #fff !important;
+    font-size: 10px;
+    right: 20px
+  }
+  #cart-button {
+    padding: 0
+  }
+  #cart-name {
+    margin-left: -12px;
+    font-size: .85rem;
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 .top-bar__nav a {
   color: #fff;
@@ -165,7 +184,6 @@ max-width: 250px;
   & a {
   color: #0c2340;
   font-size: 16px;
-  padding: 16px;
   }
   & a:hover {
     color: #e5cdcf;
@@ -193,8 +211,6 @@ body, a, p, h1, h2, h3, h4, h5, h6, small, em, s, b, strong, li {
 }
 .top-bar .row .col {
   order: 2;
-  display: flex;
-  justify-content: end;
 }
 .top-bar .row .col-auto {
   order: 1;
@@ -247,4 +263,123 @@ body, a, p, h1, h2, h3, h4, h5, h6, small, em, s, b, strong, li {
 // esconder pessoa jurídica
 #account-form-type-j, #account-form-type-j + label {
 display: none !important;
-} 
+}
+@media (min-width: 992px) {
+  .header__search {
+    width: 25%;
+    float: right;
+  }
+  .banner-slider {
+    max-width: 100%;
+    max-height: calc(100rem*var(--banner-aspect-ratio))
+  }
+}
+@media (min-width: 900px) {
+  .header {
+  top: 32.6px;
+  }
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+  }
+  #link-direct {
+      width: 33.33%;
+      float: right;
+      z-index: 90;
+      bottom: 3.3rem;
+      position: relative;
+  }
+  .product-card__buy button {
+    width: 33.33%;
+    float: left;
+    margin-left: 33.33%;
+    bottom: 2.8rem;
+    position: relative;
+  }
+  #coluna-logo {
+    height: 20px;
+  }
+  #primeiro-rodape {
+    border-right: 1px solid #ccc;
+  }
+  #footer__logo img {
+    max-width: 350px;
+    max-height: 100px;
+  }
+  #bloco-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#page-home .page-title__head {
+  display: flex;
+  justify-content: center !important;
+  & > * {
+    font-size: 1.5rem !important;
+  }
+}
+.product-card--inactive + #link-direct {
+  display: none !important
+}
+#link-direct {
+  background: #D66853;
+  border-color: #D66853;
+}
+.css-1htswej {
+  display: none !important
+}
+.condicao-pagamento {
+  margin-bottom: 0
+}
+.header__nav a, .product-card__name, button, h1, h2, h3, h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600
+}
+#product-description p, .info .subtitle, #product-description a, #product-description h1, #product-description h2, #product-description h3, #product-description h4, #product-description h5, #product-description h6, #product-description b, #product-description strong, #product-description em, #product-description span, #product-description {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 200;
+}
+.banners-grid-3 .container, .banners-grid-4 .container, .banners-grid .container, .banners-grid-text .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media(min-width: 998px) {
+  .banners-grid-3 .col-12.col-lg-4.mb-3.mb-lg-0 picture img {
+    height: 180.3px
+  }
+  .banners-grid-3 .col-12.col-lg-4.mb-3.mb-lg-0:first-child, .banners-grid-3 .col-12.col-lg-4.mb-3.mb-lg-0:nth-child(2) {
+    padding-right: 5px;
+  }
+  .banners-grid-3 .col-12.col-lg-4.mb-3.mb-lg-0:nth-child(2), .banners-grid-3 .col-12.col-lg-4.mb-3.mb-lg-0:nth-child(3) {
+    padding-left: 5px;
+  }
+}
+#footer__logo {
+  padding-bottom: 1rem !important
+}
+.search-engine__item.product-card--smal .product-card__buy button {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    bottom: 0 !important;
+    position: relative;
+}
+#page-search .search-engine__item .product-card__buy button {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    bottom: 0 !important;
+    position: relative;
+}
+@media(min-width: 992px) {
+  .search-engine__retail .col-lg-3 {
+  width: 33.33% !important;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  }
+}
+.info .product-card__name {
+  --max-lines: 1;
+}

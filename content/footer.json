@@ -14,7 +14,7 @@
     "list": []
   },
   "contacts": {
-    "title": "Contato",
+    "title": "Atendimento",
     "phone_wpp": true,
     "socials": true,
     "email": true,
@@ -29,12 +29,7 @@
       "src": "/img/uploads/logo-natrue-2-.png",
       "alt": "Nature ",
       "link": "https://www.natrue.org/our-standard/natrue-certified-world/"
-    },
-    {
-      "link": "",
-      "alt": ""
-    },
-    {}
+    }
   ],
   "payment_methods": {
     "bb": true,

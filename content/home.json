@@ -33,55 +33,59 @@
       ]
     },
     {
-      "type": "responsive-banner",
-      "img": "/img/uploads/banner-tarja.png",
-      "alt": ""
+      "type": "page-title",
+      "title": "Linden Leaves | Natural, Sustentável e Orgânico",
+      "description": ""
     },
     {
       "type": "collection-shelf",
       "shuffle": true,
-      "collection_id": "5f08a29a14ff772fde7efef0",
       "sort": "sales",
       "title": "Mais Vendidos"
     },
     {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "headless": true
-    },
-    {
-      "type": "banners-grid",
+      "type": "banners-grid-quatro",
       "banners": [
         {
-          "img": "/img/uploads/creme-para-as-maos-green-verbana-100ml-linden-leaves.webp",
-          "link": "/maos",
-          "mobile_img": "/img/uploads/minibanner-site-lindenleaves-1-_1-1-.jpg"
+          "img": "/img/uploads/BANNER_MAOS.png",
+          "link": "/maos"
         },
         {
-          "img": "/img/uploads/hidratante-corporal-linden-leaves-200ml.webp",
-          "link": " hidratante-corporal",
-          "mobile_img": "/img/uploads/minibanner-site-lindenleaves-1-_2.jpg"
+          "img": "/img/uploads/BANNER_HIDRATANTES2.png",
+          "link": " hidratante-corporal"
         },
         {
-          "img": "/img/uploads/oleo-corporal-memories-200ml-com-rosas.webp",
-          "link": "/aromaterapia",
-          "mobile_img": "/img/uploads/minibanner-site-lindenleaves-1-.jpg"
+          "img": "/img/uploads/BANNER_FACIAL.png",
+          "link": "/aromaterapia"
         },
         {
-          "img": "/img/uploads/oleo-facial-miraculous.webp",
-          "link": "/oleo-facial-miraculous-com-cha-branco-e-oleo-de-rosa-mosqueta",
-          "mobile_img": "/img/uploads/oleo-facial-miraculous-1-.jpg"
+          "img": "/img/uploads/BANNER-OLEOS.png",
+          "link": "/oleo-facial-miraculous-com-cha-branco-e-oleo-de-rosa-mosqueta"
         }
       ]
     },
     {
-      "type": "responsive-banner",
-      "img": "/img/uploads/oleo-corporal-pick-me-up-200ml.webp",
-      "mobile_img": "/img/uploads/minibanner-site-lindenleaves-2-copy.jpg"
+      "type": "banners-grid-text",
+      "banners": [
+        {
+          "img": "/img/uploads/PRODUTOBANNER.png",
+          "link": "/maos"
+        },
+        {
+          "img": "/img/uploads/PRODUTObanner2.png",
+          "link": "/hidratante-corporal"
+        }
+      ]
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "headless": true,
+      "title": "Premium"
     },
     {
       "type": "custom-html",
-      "html": "<script src=\"https://www.sowecms.com/demos/InstagramFeed/dist/InstagramFeed.min.js\"></script>\n<div id=\"instagram-feed\" class=\"instagram_feed\"></div>\n<script>\n    (function(){\n        new InstagramFeed({\n            'username': 'lindenleavesbrasil',\n            'container': document.getElementById(\"instagram-feed\"),\n            'display_profile': false,\n            'display_biography': false,\n            'display_igtv': false,\n            'display_gallery': true,\n            'get_raw_json': false,\n            'callback': null,\n            'styling': true,\n            'items': 3,\n            'items_per_row': 3,\n            'margin': 1 \n        });\n    })();\n</script>"
+      "html": "<div data-mc-src=\"e0200e55-8183-4141-aed2-5e91d55c5110#instagram\"></div><script src=\"https://cdn2.woxo.tech/a.js#60195ae5bc355800154f462b\" async defer data-usrc></script>"
     }
   ]
 }

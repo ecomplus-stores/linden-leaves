@@ -4,5 +4,150 @@
     "branch": "master",
     "identity_url": "https://gotrue.ecomplus.biz/1107/.netlify/identity",
     "gateway_url": "https://gitgateway.ecomplus.biz/1107/.netlify/git"
+  },
+  "collections": [
+  {},
+  {},
+  {
+    "name": "pages",
+    "files": [
+      {
+        "name": "home",
+        "label": "Página inicial",
+        "file": "content/home.json",
+        "fields": [
+          {
+            "label": "Meta title",
+            "name": "meta_title",
+            "widget": "string",
+            "hint": "Título exibido na aba do navegador e nos resultados de motores de busca, relevante para SEO",
+            "required": false
+          },
+          {
+            "label": "Meta description",
+            "name": "meta_description",
+            "widget": "string",
+            "hint": "Descrição exibida nos resultados de motores de busca, relevante para SEO",
+            "required": false
+          },
+          {
+            "label": "Seções",
+            "name": "sections",
+            "widget": "list",
+            "types": [
+              {
+                "label": "Banners de 3 imagens",
+                "name": "banners-grid-tres",
+                "widget": "object",
+                "fields": [
+                    {
+                        "label": "Banners",
+                        "name": "banners",
+                        "widget": "list",
+                        "fields": [
+                            {
+                                "label": "Imagem",
+                                "name": "img",
+                                "widget": "image"
+                            },
+                            {
+                                "label": "Link",
+                                "required": false,
+                                "name": "link",
+                                "widget": "string"
+                            },
+                            {
+                                "label": "Alt",
+                                "required": false,
+                                "name": "alt",
+                                "widget": "string"
+                            }
+                        ]
+                    }
+                ]
+            },
+              {
+                "label": "Banner de 4 imagens",
+                "name": "banners-grid-quatro",
+                "widget": "object",
+                "fields": [
+                    {
+                        "label": "Banners",
+                        "name": "banners",
+                        "widget": "list",
+                        "fields": [
+                            {
+                                "label": "Imagem",
+                                "name": "img",
+                                "widget": "image"
+                            },
+                            {
+                                "label": "Link",
+                                "required": false,
+                                "name": "link",
+                                "widget": "string"
+                            },
+                            {
+                                "label": "Alt",
+                                "required": false,
+                                "name": "alt",
+                                "widget": "string"
+                            }
+                        ]
+                    }
+                ]
+              },
+              {
+                "label": "Banners de imagens e texto",
+                "name": "banners-grid-text",
+                "widget": "object",
+                "fields": [
+                    {
+                        "label": "Banners",
+                        "name": "banners",
+                        "widget": "list",
+                        "fields": [
+                            {
+                                "label": "Imagem",
+                                "name": "img",
+                                "widget": "image"
+                            },
+                            {
+                                "label": "Link",
+                                "required": false,
+                                "name": "link",
+                                "widget": "string"
+                            },
+                            {
+                                "label": "Alt",
+                                "required": false,
+                                "name": "alt",
+                                "widget": "string"
+                            },
+                            {
+                              "label": "Nome do produto",
+                              "name": "title",
+                              "widget": "string"
+                            },
+                            {
+                              "label": "Subtitulo do produto",
+                              "name": "subtitle",
+                              "widget": "string"
+                            },
+                            {
+                              "label": "Nome do botão",
+                              "name": "botao",
+                              "widget": "string"
+                            }
+                        ]
+                    }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
+]
 }

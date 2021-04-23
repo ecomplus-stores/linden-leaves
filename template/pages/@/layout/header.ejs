@@ -74,13 +74,24 @@ if (header.categories_list) {
   <div class="top-bar__nav d-none d-md-block">
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
+        <div class="col" id="link-final">
           <nav class="top-bar__page-links">
             <% if (header.contacts_stripe.pages) { %>
               <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
                 <a href="<%= link %>"><%= title %></a>
               <% }) %>
             <% } %>
+            <a
+              id="cart-button"
+              role="button"
+              class="btn"
+              href="/app/#/cart"
+              title="<%= _.dictionary('openCart') %>"
+            >
+              <img style="width: 18px;height: 21px" src="/img/uploads/bag-white-cart-icon.png" alt="Sacola de pedidos">
+              <span id="cart-count" class="badge badge-primary"></span>
+              <span id="cart-name">Carrinho</span>
+            </a>
           </nav>
           <% if (header.contacts_stripe.phone_wpp) { %>
             <% if (contacts.whatsapp) { %>
@@ -179,17 +190,17 @@ if (header.categories_list) {
 
           <a
             id="user-button"
-            class="btn btn-lg"
+            class="btn btn-lg d-md-none"
             role="button"
             href="/app/#/account/"
             title="<%= _.dictionary('myAccount') %>"
           >
-          <span class="d-md-none">Minha conta</span>
-          <span class="d-md-inline d-none"><i class="fas fa-user"></i></span>
+
+          <i class="fas fa-user"></i>
           </a>
           <a
             id="cart-button"
-            class="btn btn-lg"
+            class="btn btn-lg d-md-none"
             role="button"
             href="/app/#/cart"
             title="<%= _.dictionary('openCart') %>"
@@ -229,8 +240,8 @@ if (header.categories_list) {
             <input
               type="search"
               name="term"
-              placeholder="<%= _.dictionary('searchProducts') %>"
-              aria-label="<%= _.dictionary('searchProducts') %>"
+              placeholder="Pesquisar"
+              aria-label="Pesquisar"
               class="header__search-input form-control"
               id="search-input"
             >

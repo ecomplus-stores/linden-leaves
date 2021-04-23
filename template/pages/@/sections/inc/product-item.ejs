@@ -7,7 +7,6 @@ if (Array.isArray(_.itemDataFields)) {
 itemDataFields.forEach(field => itemData[field] = opt.item[field])
 itemData.name = _.ecomUtils.name(opt.item)
 itemData.price = _.ecomUtils.price(opt.item)
-
 const imgObj = _.ecomUtils.img(opt.item)
 if (imgObj) {
   itemData.pictures = [{
@@ -92,4 +91,13 @@ if (imgObj) {
   <%- await include('@/helpers/widgets-append', {
     _, opt, field: 'productItemAppend'
   }) %>
+
+  <a
+  href="/<%= itemData.slug %>"
+  class="btn btn-secondary btn-block"
+  id="link-direct"
+  title="<%= itemData.name %>"
+>
+  Detalhes
+</a>
 </article>

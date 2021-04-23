@@ -8,16 +8,16 @@
     "custom": "clean-gray"
   },
   "bg_color": "#ffffff",
-  "logo": "/img/uploads/logo-site-maior.png",
+  "logo": "/img/uploads/logo.png",
   "name": "Linden Leaves",
   "short_name": "Linden Leaves",
   "lang": "pt_br",
   "currency": "BRL",
-  "mini_logo": "/img/uploads/minilogo-linden.jpg",
-  "favicon": "/img/uploads/logo-linden-leaves-site.png",
+  "mini_logo": "/img/uploads/favicon.png",
+  "favicon": "/img/uploads/favicon.png",
   "country_code": "BR",
   "secondary_color": "#badfbe",
-  "icon": "/img/uploads/logo-linden-leaves-site.png",
+  "icon": "/img/uploads/favicon.png",
   "description": "\nConheça nossos produtos naturais e orgânicos certificados que promovem a beleza e o bem-estar diário de forma saudável. Aproveite agora e pague em até 12x sem juros. Frete grátis e produtos com 30% OFF. ",
   "large_icon": "/img/uploads/logo-site-maior.png"
 }
