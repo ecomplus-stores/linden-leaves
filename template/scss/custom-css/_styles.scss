@@ -268,6 +268,10 @@ display: none !important;
     width: 25%;
     float: right;
   }
+  .banner-slider {
+    max-width: 100%;
+    max-height: calc(100rem*var(--banner-aspect-ratio))
+  }
 }
 @media (min-width: 767px) {
   .header {
@@ -278,6 +282,35 @@ display: none !important;
     top: 0;
     z-index: 900;
   }
+  #link-direct {
+      width: 33.33%;
+      float: right;
+      z-index: 90;
+      bottom: 3.3rem;
+      position: relative;
+  }
+  .product-card__buy button {
+    width: 33.33%;
+    float: left;
+    margin-left: 33.33%;
+    bottom: 2.8rem;
+    position: relative;
+  }
+  #coluna-logo {
+    height: 20px;
+  }
+  #primeiro-rodape {
+    border-right: 1px solid #ccc;
+  }
+  #footer__logo img {
+    max-width: 350px;
+    max-height: 100px;
+  }
+  #bloco-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 #page-home .page-title__head {
   display: flex;
@@ -286,14 +319,18 @@ display: none !important;
     font-size: 1.5rem !important;
   }
 }
-#link-direct {
-    width: 50%;
-    float: right;
-    z-index: 90;
-    bottom: .5rem;
-    position: relative;
+@media(max-width: 767px) {
+  #link-direct {
+    
+  }
+
 }
-.product-card__buy button {
-  width: 50%;
-  float: left;
+.product-card--inactive + #link-direct {
+  display: none !important
+}
+.css-1htswej {
+  display: none !important
+}
+.condicao-pagamento {
+  margin-bottom: 0
 }
