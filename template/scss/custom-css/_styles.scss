@@ -7,6 +7,16 @@
   .page--home #banner-secundario {
     padding-left: 5px;
   }
+  .page--home .banners-grid-text {
+    .col-12.col-lg-6.mb-2.mb-lg-0 {
+      &:first-child {
+      padding-right: 5px
+    }
+      &:last-child {
+      padding-left: 5px
+    }
+   }
+  }
   #menu-novo {
     display: flex !important;
     justify-content: flex-end;
