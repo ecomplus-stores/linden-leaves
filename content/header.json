@@ -16,6 +16,10 @@
       {
         "title": "Nossa história",
         "link": "https://www.lindenleaves.com.br/pages/sobre-nos"
+      },
+      {
+        "title": "Entrar",
+        "link": "https://www.lindenleaves.com.br/app/#/account/"
       }
     ],
     "phone_wpp": true,
