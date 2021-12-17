@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.a71a761a72d12998d5931c454edc89ca.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.99e1507e93bd84f6dba3d481aec33392.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.36e583704f0b22bf9e6736da51dc9f87.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.8b86e369b4c3d6f5b1cd9ad888417080.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.9f5b328480a82469363c9fcfff553ea1.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Linden Leaves",
+  "short_name": "Linden Leaves",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "\nConheça nossos produtos naturais e orgânicos certificados que promovem a beleza e o bem-estar diário de forma saudável. Aproveite agora e pague em até 12x sem juros. Frete grátis e produtos com 30% OFF. ",
+  "background_color": "#ffffff",
+  "theme_color": "#259dab"
+}
